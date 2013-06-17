@@ -1,0 +1,12 @@
+<aside id="recent-posts-2" class="widget widget_recent_entries">
+<section>
+  <h1  class="widget-title">Recent Posts</h1>
+  <ul>
+    {% for post in site.posts limit: site.recent_posts %}
+      <li >
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+</aside>
